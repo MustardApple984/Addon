@@ -13,8 +13,8 @@ world.afterEvents.itemUse.subscribe((ev) => {
 function open_form(player) {
   const form = new ActionFormData()
     .title('§l==MENU==')
-    .body('§l§cBOSS§e RPG')
-    .button('§l§a==SHOP==')
+    .body('§l§b青空ジェネレーター')
+    .button('§l§b==ジェネレーター==')
     .button('§l§d==テレポート==');
 
   form.show(player).then((formRes) => {
@@ -23,7 +23,7 @@ function open_form(player) {
       openShopForm(player);
     } else if (formRes.selection === 2) {
       // テレポートを選択した場合、次のフォームを表示
-      nextForm(player);
+      nexttpForm(player);
     }
   });
 }
